@@ -1,0 +1,136 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* https://coolors.co/fefeec-fee7c2-403f4c-8499b1-d9bbf9 */
+
+.hersey{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width:100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #FEE7C2;
+    /* gap: auto; */
+}
+
+
+
+html,body{
+    margin:0px;
+    height: 100vh;
+    /* overflow: auto; */
+    /* min-height:100%; */
+    /* display: block; */
+  /* position:absolute;
+  height:auto;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0; */
+}
+
+.tepe{
+    background-color: #403F4C;
+    color: #fefeec;
+    font-size:18px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px;
+    width:100%;
+    /* flex-grow: 1; */
+    /* box-sizing: border-box; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.tepe1{
+    display:flex;
+    padding: 2vh 10vw;
+    justify-content: space-between;
+    width:100%;
+    gap:10px;
+    flex-wrap: wrap;
+    margin:0px;
+    
+}
+
+.tepe2{
+    display: flex;
+    /* width:80vw; */
+    justify-content: space-around;
+    padding: 5vh 20vw;
+    gap:20px;
+    /* flex-grow: 1; */
+    color: #403F4C;
+    margin:0px;
+    /* margin-top: 10px; */
+}
+
+.yaziyeri{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mor{
+    color:#AB69F2;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    margin:0px;
+    padding:0px;
+    gap: 20px;
+    font-weight: 900;
+}
+
+.card{
+    display:flex;
+    width:50%;
+    justify-content: center;
+    margin:0px;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.orta{
+    display:flex;
+    flex-direction: column;
+    /* height: 60vh; */
+    margin:0px;
+    /* background: linear-gradient(110deg, #FDD89B 60%, #D9BBF9 60%); */
+    background-color: #FDD89B;
+    /* flex-grow: 1; */
+}
+
+.album{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    width: auto;
+    /* width:68vw; */
+    align-self: center;
+    flex-wrap: wrap;
+    margin:0px;
+    gap:0px;
+    border-radius: 2vmin;
+    border: 2vmin solid #AB69F2;
+}
+
+.footer{
+    background-color: #8499b1;
+    color:#fefeec;
+    display:flex;
+    justify-content: center;
+    padding: 1vh;
+    margin:0px;
+}
