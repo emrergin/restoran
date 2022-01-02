@@ -39,7 +39,7 @@ function altKisim() {
   const altCubuk=document.createElement(`div`);
   altCubuk.classList.add(`footer`);
   const dipnot=document.createElement(`p`);
-  dipnot.innerHTML=`<a href=https://github.com/emrergin> Emre Ergin </a> tarafından tasarlanmıştır.`;
+  dipnot.innerHTML=`<a href=https://github.com/emrergin> Emre Ergin</a> tarafından tasarlanmıştır.`;
   altCubuk.appendChild(dipnot);
 
   return altCubuk;
