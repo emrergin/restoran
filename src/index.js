@@ -1,12 +1,53 @@
-import { pageLoad } from './pageLoad';
+import { tanitimLoad, resim1Load } from './pageLoad';
 import { menuLoad } from './menuLoad';
 import { contactLoad } from './contactLoad';
 import './style.css';
 
+const herSey = document.createElement('div');
+herSey.classList.add(`hersey`);
 
-function component() {
-  return pageLoad();
+function ustKisim() {
+const herTepe=document.createElement('div');
+herTepe.classList.add(`tepe`);
+const ustButonlar=document.createElement('ul');
+
+const menuButon=document.createElement('li');
+menuButon.textContent="Menü";
+menuButon.setAttribute(`id`,`Dugme2`);
+menuButon.addEventListener("click", menuLoad);
+
+const hakkindaButon=document.createElement('li');
+hakkindaButon.textContent="Hakkında";
+hakkindaButon.setAttribute(`id`,`Dugme3`);
+hakkindaButon.addEventListener("click", contactLoad);
+
+const anaButon=document.createElement(`li`);
+anaButon.textContent=`Anasayfa`;
+anaButon.setAttribute(`id`,`Dugme1`);
+// anaButon.addEventListener("click", pageLoad);
+
+ustButonlar.appendChild(anaButon);
+ustButonlar.appendChild(menuButon);
+ustButonlar.appendChild(hakkindaButon);
+
+herTepe.appendChild(ustButonlar);
+
+return herTepe;
+}
+
+function altKisim() {
+  const altCubuk=document.createElement(`div`);
+  altCubuk.classList.add(`footer`);
+  const dipnot=document.createElement(`p`);
+  dipnot.innerHTML=`<a href=https://github.com/emrergin> Emre Ergin </a> tarafından tasarlanmıştır.`;
+  altCubuk.appendChild(dipnot);
+
+  return altCubuk;
 }
   
-document.body.appendChild(component());
+herSey.appendChild(ustKisim());
+herSey.appendChild(tanitimLoad());
+herSey.appendChild(resim1Load());
+herSey.appendChild(altKisim());
+document.body.appendChild(herSey);
 
