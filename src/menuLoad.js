@@ -1,5 +1,9 @@
 function menuLoad(){
-    console.log(`daha hazir degilim`);
+  const menuGenel=document.createElement('div');
+  menuGenel.textContent=`MENU DENEME`;
+  
+  return menuGenel;
+
 }
 
   export {  menuLoad };

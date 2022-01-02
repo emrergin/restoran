@@ -7,32 +7,32 @@ const herSey = document.createElement('div');
 herSey.classList.add(`hersey`);
 
 function ustKisim() {
-const herTepe=document.createElement('div');
-herTepe.classList.add(`tepe`);
-const ustButonlar=document.createElement('ul');
+  const herTepe=document.createElement('div');
+  herTepe.classList.add(`tepe`);
+  const ustButonlar=document.createElement('ul');
 
-const menuButon=document.createElement('li');
-menuButon.textContent="Menü";
-menuButon.setAttribute(`id`,`Dugme2`);
-menuButon.addEventListener("click", menuLoad);
+  const menuButon=document.createElement('li');
+  menuButon.textContent="Menü";
+  menuButon.setAttribute(`id`,`Dugme2`);
+  menuButon.addEventListener("click", menuYukleme);
 
-const hakkindaButon=document.createElement('li');
-hakkindaButon.textContent="Hakkında";
-hakkindaButon.setAttribute(`id`,`Dugme3`);
-hakkindaButon.addEventListener("click", contactLoad);
+  const hakkindaButon=document.createElement('li');
+  hakkindaButon.textContent="Hakkında";
+  hakkindaButon.setAttribute(`id`,`Dugme3`);
+  hakkindaButon.addEventListener("click", bilgiYukleme);
 
-const anaButon=document.createElement(`li`);
-anaButon.textContent=`Anasayfa`;
-anaButon.setAttribute(`id`,`Dugme1`);
-// anaButon.addEventListener("click", pageLoad);
+  const anaButon=document.createElement(`li`);
+  anaButon.textContent=`Anasayfa`;
+  anaButon.setAttribute(`id`,`Dugme1`);
+  anaButon.addEventListener("click", anaYukleme);
 
-ustButonlar.appendChild(anaButon);
-ustButonlar.appendChild(menuButon);
-ustButonlar.appendChild(hakkindaButon);
+  ustButonlar.appendChild(anaButon);
+  ustButonlar.appendChild(menuButon);
+  ustButonlar.appendChild(hakkindaButon);
 
-herTepe.appendChild(ustButonlar);
+  herTepe.appendChild(ustButonlar);
 
-return herTepe;
+  return herTepe;
 }
 
 function altKisim() {
@@ -45,9 +45,32 @@ function altKisim() {
   return altCubuk;
 }
   
-herSey.appendChild(ustKisim());
-herSey.appendChild(tanitimLoad());
-herSey.appendChild(resim1Load());
-herSey.appendChild(altKisim());
-document.body.appendChild(herSey);
+anaYukleme();
+
+function menuYukleme(){
+  herSey.innerHTML=``;
+  herSey.appendChild(ustKisim());
+  herSey.appendChild(menuLoad());
+  herSey.appendChild(altKisim());
+  document.body.appendChild(herSey);
+}
+
+function anaYukleme(){
+  herSey.innerHTML=``;
+  herSey.appendChild(ustKisim());
+  herSey.appendChild(tanitimLoad());
+  herSey.appendChild(resim1Load());
+  herSey.appendChild(altKisim());
+  document.body.appendChild(herSey);
+}
+
+function bilgiYukleme(){
+  herSey.innerHTML=``;
+  herSey.appendChild(ustKisim());
+  herSey.appendChild(contactLoad());
+  herSey.appendChild(altKisim());
+  document.body.appendChild(herSey);
+}
+
+// function 
 

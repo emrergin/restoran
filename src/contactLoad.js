@@ -1,5 +1,8 @@
 function contactLoad(){
-    console.log(`daha hazir degilim`);
+  const bilgiGenel=document.createElement('div');
+  bilgiGenel.textContent=`BİLGİ DENEME`;
+  
+  return bilgiGenel;
 }
 
 export {  contactLoad };
