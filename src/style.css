@@ -7,10 +7,10 @@
 .hersey{
     display:flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
     width:100%;
-    height: 100%;
+    height: 100vh;
     margin: 0px;
     background-color: #FEE7C2;
     /* gap: auto; */
@@ -33,18 +33,10 @@ html,body{
     margin:0px;
     width:100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    justify-content: center;
+    padding: 2vh 10vw;
 }
 
-.tepe1{
-    display:flex;
-    padding: 2vh 10vw;
-    justify-content: space-between;
-    width:100%;
-    gap:10px;
-    flex-wrap: wrap;
-    margin:0px;
-    
-}
 
 .tepe2{
     display: flex;
@@ -68,10 +60,12 @@ html,body{
 
 ul{
     list-style-type: none;
+    justify-content: space-around;
     display:flex;
     margin:0px;
     padding:0px;
     gap: 20px;
+    font-size: 23px;
     font-weight: 900;
 }
 
@@ -79,10 +73,11 @@ li{
     cursor: pointer;
 }
 
+
+/* ORTA BASLANGICI=================================================== */
 .card{
     display:flex;
     width:50%;
-    max-height:100%;
     justify-content: center;
     margin:0px;
 }
@@ -97,15 +92,19 @@ li{
     display:flex;
     flex-direction: column;
     margin:0px;
+    /* margin-bottom: 10px; */
     background-color: #FDD89B;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
 }
 
 .album{
     display:flex;
     justify-content: center;
     align-items: stretch;
-    height: 100%;
+    /* height: 100%; */
     width: auto;
+    max-width: 1000px;
     align-self: center;
     flex-wrap: wrap;
     margin:0px;
@@ -116,6 +115,7 @@ li{
 
 .footer{
     background-color: #8499b1;
+    width:100%;
     color:#fefeec;
     display:flex;
     justify-content: center;
