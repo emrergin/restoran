@@ -110,10 +110,13 @@ li{
     align-self: center;
     flex-wrap: wrap;
     margin:0px;
-    gap:0px;
     border-radius: 2vmin;
     border: 2vmin solid #AB69F2;
+    gap:0px;
 }
+
+
+
 
 .footer{
     background-color: #8499b1;
@@ -123,4 +126,108 @@ li{
     justify-content: center;
     padding: 1vh;
     margin:0px;
+}
+
+/* MENU ITEM======================= */
+.menuitem{
+    display:flex;
+    flex-direction: column;
+    border-radius: 2vmin;
+    border: 2vmin solid #AB69F2;
+    height: auto;
+    width: 20%;
+}
+
+.menuitem span{
+    text-align: center;
+}
+
+.menuitem img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+    /* width:100%; */
+    /* height: 100% */
+    /* width: 600px; */
+
+}
+
+
+.menuAlbum{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* maxheight: 100%; */
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin:0px 5vw;
+    gap:20vmin;
+    background-color: #FDD89B;  
+}
+
+#menuContainer{
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* HAKKINDA SAYFASI================= */
+.harita{
+    border: 2vmin solid #AB69F2; 
+    border-radius: 2vmin;
+    flex-grow: 1;
+}
+
+.orta3{
+    background-color: #FDD89B;  
+    width: 100%; 
+    height: 80%;
+    display: flex;
+    padding: 0 10%;
+    flex-direction: column; 
+    align-items:stretch;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
+}
+
+/* h1{ */
+    /* text-align: center; */
+/* } */
+
+
+/* Mobil */
+@media (max-width:700px) { 
+    .tepe2{
+        order:3;
+    }
+    .orta{
+        order:2;
+    }
+    .footer{
+        order:10;
+    }
+
+    /* #menuContainer{
+     justify-content: center;
+    } */
+
+    .menuAlbum{
+    margin:0px;
+    gap:2px;
+    align-items: center;
+    }
+
+    .menuitem{
+        /* display:flex;
+        flex-direction: column;
+        border-radius: 2vmin;
+        border: 2vmin solid #AB69F2;
+        height: auto; */
+        width: 45%;
+    }
 }
