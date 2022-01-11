@@ -72,5 +72,4 @@ function bilgiYukleme(){
   document.body.appendChild(herSey);
 }
 
-// function 
 
