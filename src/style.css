@@ -18,14 +18,12 @@ html,body{
     height: 100%;
     margin: 0px;
     background-color: #FEE7C2;
-    /* border: 2px solid red; */
-    /* gap: auto; */
 }
 
 #tepe{
     background-color: #403F4C;
     color: #fefeec;
-    font-size:18px;
+    font-size:4rem;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +149,7 @@ li{
     align-content: space-evenly;
     width: 100%;
     height: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin:0px 5vw;
     gap:0.5vh 2vw;
     background-color: #FDD89B;  
@@ -186,39 +184,37 @@ li{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
 }
 
-/* h1{ */
-    /* text-align: center; */
-/* } */
-
 
 /* Mobil */
 @media (max-width:700px) { 
-    .tepe2{
+    #tepe2{
         order:3;
     }
-    .orta{
+    #orta{
         order:2;
     }
-    .footer{
+    #footer{
         order:10;
     }
-
-    /* #menuContainer{
-     justify-content: center;
-    } */
 
     .menuAlbum{
     margin:0px;
     gap:2px;
     align-items: center;
+    flex-wrap: wrap;
     }
 
     .menuitem{
-        /* display:flex;
-        flex-direction: column;
-        border-radius: 2vmin;
-        border: 2vmin solid #AB69F2;
-        height: auto; */
         width: 45%;
+    }
+
+    #footer{
+        font-size:1rem;
+    }
+
+    ul{
+        font-size:1.5rem;
+        /* font-size: 90px; */
+        gap:1.5rem;
     }
 }

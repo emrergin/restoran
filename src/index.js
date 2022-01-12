@@ -69,22 +69,15 @@ function boyHesabi(){
   let yuk1=document.getElementById("tepe").offsetHeight;
   let yuk2=document.getElementById("tepe2").offsetHeight;
   let yuk3=document.getElementById("footer").offsetHeight;
+
+  let finalBoyut=Math.min(document.body.offsetHeight-(yuk1+yuk2+yuk3)-50,document.body.offsetWidth*0.45);
    
   const kartlar = document.querySelectorAll('.card');
   kartlar.forEach((kart) =>{
-    kart.style.height=`${(document.body.offsetHeight-(yuk1+yuk2+yuk3)-60)}px`;
-    kart.style.width=`${(document.body.offsetHeight-(yuk1+yuk2+yuk3)-60)}px`;
+    kart.style.height=`${finalBoyut}px`;
+    kart.style.width=`${finalBoyut}px`;
   });
 }
-
-// pikseller.forEach((piksel) => {
-//   piksel.addEventListener('mousedown', ciz);
-//   piksel.addEventListener('mouseover', ciz2);
-//   piksel.addEventListener('click', ciz2);
-//   piksel.addEventListener('mouseup', dur);
-//   piksel.addEventListener("contextmenu", ( e )=> { e.preventDefault(); return false; } );
-// });
-
 
 function bilgiYukleme(){
   herSey.innerHTML=``;
