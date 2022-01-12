@@ -17,10 +17,10 @@ function menuLoad(){
   const resim2= new Image();
   const resim3= new Image();
   const resim4= new Image();
-  resim1.src=`https://via.placeholder.com/150`;
-  resim2.src=`https://via.placeholder.com/150`;
-  resim3.src=`https://via.placeholder.com/150`;
-  resim4.src=`https://via.placeholder.com/150`;
+  resim1.src=`https://via.placeholder.com/150?text=Eh+İşte`;
+  resim2.src=`https://via.placeholder.com/150?text=Eh+İşte`;
+  resim3.src=`https://via.placeholder.com/150?text=Eh+İşte`;
+  resim4.src=`https://via.placeholder.com/150?text=Eh+İşte`;
 
   const yazi1=document.createElement(`span`);
   const yazi2=document.createElement(`span`);

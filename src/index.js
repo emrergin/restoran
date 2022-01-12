@@ -8,7 +8,7 @@ herSey.classList.add(`hersey`);
 
 function ustKisim() {
   const herTepe=document.createElement('div');
-  herTepe.classList.add(`tepe`);
+  herTepe.setAttribute(`id`,`tepe`);
   const ustButonlar=document.createElement('ul');
 
   const menuButon=document.createElement('li');
@@ -37,7 +37,7 @@ function ustKisim() {
 
 function altKisim() {
   const altCubuk=document.createElement(`div`);
-  altCubuk.classList.add(`footer`);
+  altCubuk.setAttribute(`id`,`footer`);
   const dipnot=document.createElement(`p`);
   dipnot.innerHTML=`<a href=https://github.com/emrergin> Emre Ergin</a> tarafından tasarlanmıştır.`;
   altCubuk.appendChild(dipnot);
@@ -60,9 +60,31 @@ function anaYukleme(){
   herSey.appendChild(ustKisim());
   herSey.appendChild(tanitimLoad());
   herSey.appendChild(resim1Load());
-  herSey.appendChild(altKisim());
+  herSey.appendChild(altKisim());  
   document.body.appendChild(herSey);
+  boyHesabi();
 }
+
+function boyHesabi(){
+  let yuk1=document.getElementById("tepe").offsetHeight;
+  let yuk2=document.getElementById("tepe2").offsetHeight;
+  let yuk3=document.getElementById("footer").offsetHeight;
+   
+  const kartlar = document.querySelectorAll('.card');
+  kartlar.forEach((kart) =>{
+    kart.style.height=`${(document.body.offsetHeight-(yuk1+yuk2+yuk3)-60)}px`;
+    kart.style.width=`${(document.body.offsetHeight-(yuk1+yuk2+yuk3)-60)}px`;
+  });
+}
+
+// pikseller.forEach((piksel) => {
+//   piksel.addEventListener('mousedown', ciz);
+//   piksel.addEventListener('mouseover', ciz2);
+//   piksel.addEventListener('click', ciz2);
+//   piksel.addEventListener('mouseup', dur);
+//   piksel.addEventListener("contextmenu", ( e )=> { e.preventDefault(); return false; } );
+// });
+
 
 function bilgiYukleme(){
   herSey.innerHTML=``;
@@ -71,5 +93,7 @@ function bilgiYukleme(){
   herSey.appendChild(altKisim());
   document.body.appendChild(herSey);
 }
+
+
 
 

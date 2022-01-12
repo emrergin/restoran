@@ -4,6 +4,11 @@
 }
 /* https://coolors.co/fefeec-fee7c2-403f4c-8499b1-d9bbf9 */
 
+html,body{
+    margin:0px;
+    height: 100vh;
+}
+
 .hersey{
     display:flex;
     flex-direction: column;
@@ -13,17 +18,11 @@
     height: 100%;
     margin: 0px;
     background-color: #FEE7C2;
+    /* border: 2px solid red; */
     /* gap: auto; */
 }
 
-
-
-html,body{
-    margin:0px;
-    height: 100vh;
-}
-
-.tepe{
+#tepe{
     background-color: #403F4C;
     color: #fefeec;
     font-size:18px;
@@ -38,7 +37,7 @@ html,body{
 }
 
 
-.tepe2{
+#tepe2{
     display: flex;
     justify-content: space-around;
     padding: 5vh 20vw;
@@ -77,45 +76,44 @@ li{
 
 /* ORTA BASLANGICI=================================================== */
 .card{
-    display:flex;
-    width:50%;
-    justify-content: center;
+    max-width:50%;
+    justify-content: stretch;
     margin:0px;
 }
 
 .card img{
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: fill;
-}
-
-.orta{
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 2;
-    margin:0px;
-    /* margin-bottom: 10px; */
-    background-color: #FDD89B;
+    height: 100%;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
+    object-fit: fill;
+    margin:0px;
 }
 
-.album{
+#album{
     display:flex;
     justify-content: center;
     align-items: stretch;
-    max-height: 100%;
+    /* height: calc(90%-20px); */
     width: auto;
-    max-width: 1000px;
     align-self: center;
     flex-wrap: wrap;
-    margin:0px;
+    margin:10px;
     border-radius: 2vmin;
     border: 2vmin solid #AB69F2;
     gap:0px;
 }
 
-.footer{
+#orta{
+    display:flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    margin:0px;
+    background-color: #FDD89B;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
+}
+
+
+#footer{
     background-color: #8499b1;
     width:100%;
     color:#fefeec;
@@ -123,6 +121,7 @@ li{
     justify-content: center;
     padding: 1vh;
     margin:0px;
+    /* height: 100%; */
 }
 
 /* MENU ITEM======================= */
@@ -131,7 +130,6 @@ li{
     flex-direction: column;
     border-radius: 2vmin;
     border: 2vmin solid #AB69F2;
-    /* height: auto; */
     width: 20%;
 }
 
@@ -143,10 +141,6 @@ li{
     max-height: 100%;
     max-width: 100%;
     object-fit: fill;
-    /* width:100%; */
-    /* height: 100% */
-    /* width: 600px; */
-
 }
 
 

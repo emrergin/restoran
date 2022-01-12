@@ -11,7 +11,7 @@ function tanitimLoad(){
     const Tepe2ic=document.createElement('div');
     Tepe2ic.classList.add(`yaziyeri`);
     const Tepe2=document.createElement('div');
-    Tepe2.classList.add(`tepe2`);
+    Tepe2.setAttribute(`id`,`tepe2`);
     
     Tepe2ic.appendChild(baslik);
     Tepe2ic.appendChild(aciklama);
@@ -21,10 +21,10 @@ function tanitimLoad(){
 
 function resim1Load(){
     const Orta=document.createElement(`div`);
-    Orta.classList.add(`orta`);
+    // Orta.classList.add(`orta`);
 
     const resAlbum=document.createElement(`div`);
-    resAlbum.classList.add(`album`);
+    resAlbum.setAttribute(`id`,`album`);
 
     const card1= document.createElement(`div`);
     card1.classList.add(`card`);
@@ -41,8 +41,8 @@ function resim1Load(){
     resAlbum.appendChild(card1);
     resAlbum.appendChild(card2);
     Orta.appendChild(resAlbum);
+    Orta.setAttribute(`id`,`orta`);
     return Orta;
 }
-
 
 export {  tanitimLoad,resim1Load };
