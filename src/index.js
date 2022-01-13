@@ -70,7 +70,7 @@ function boyHesabi(){
   let yuk2=document.getElementById("tepe2").offsetHeight;
   let yuk3=document.getElementById("footer").offsetHeight;
 
-  let finalBoyut=Math.min(document.body.offsetHeight-(yuk1+yuk2+yuk3)-50,document.body.offsetWidth*0.45);
+  let finalBoyut=Math.min(document.body.offsetHeight-(yuk1+yuk2+yuk3)-55,document.body.offsetWidth*0.45);
    
   const kartlar = document.querySelectorAll('.card');
   kartlar.forEach((kart) =>{
