@@ -4,6 +4,16 @@
 }
 /* https://coolors.co/fefeec-fee7c2-403f4c-8499b1-d9bbf9 */
 
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
 html,body{
     margin:0px;
     height: 100vh;
@@ -128,7 +138,9 @@ li{
     flex-direction: column;
     border-radius: 2vmin;
     border: 2vmin solid #AB69F2;
-    width: 20%;
+    /* width: 100vw; */
+    height: 70vh;
+    width: 70vh;
 }
 
 .menuitem span{
@@ -146,13 +158,14 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: space-evenly;
+    /* align-content: space-evenly; */
     width: 100%;
     height: 100%;
     /* flex-wrap: wrap; */
     margin:0px 5vw;
     gap:0.5vh 2vw;
     background-color: #FDD89B;  
+    overflow: hidden;
 }
 
 #menuContainer{
@@ -162,6 +175,10 @@ li{
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.smallButton{
+    cursor: pointer;
 }
 
 

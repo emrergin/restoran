@@ -7,3 +7,8 @@ The theme follows from "Erişte", Turkish version of noodle. "Enişte" is a simi
 ### Sources
 - https://www.pexels.com/photo/uncooked-pasta-placed-on-table-with-scattered-flour-6287372/
 - https://www.pexels.com/photo/shallow-focus-photo-of-man-3018993/
+
+### What I learned
+- My first use of Webpack.
+- My first use of `setInterval()` method.
+- My first use of embedded Google Maps.
