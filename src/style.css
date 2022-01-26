@@ -136,8 +136,8 @@ li{
 .menuitem{
     display:flex;
     flex-direction: column;
-    border-radius: 2vmin;
-    border: 2vmin solid #AB69F2;
+    border-radius: 2vh;
+    border: 2vh solid #AB69F2;
     /* width: 100vw; */
     height: 78vh;
     width: 70vh;
@@ -158,14 +158,18 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
     /* align-content: space-evenly; */
-    width: 100%;
+    /* width: 100%; */
+    width: 504vh;
     height: 100%;
     /* flex-wrap: wrap; */
     margin:0px 5vw;
-    gap:0.5vh 2vw;
+    gap:2vh;
     background-color: #FDD89B;  
     overflow: hidden;
+    transition: transform 300ms ease-in-out;
 }
 
 #menuContainer{
@@ -173,8 +177,9 @@ li{
     flex-direction: column;
     height: 80%;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
 .smallButton{
@@ -215,13 +220,18 @@ li{
     }
 
     .menuAlbum{
-    margin:0px;
-    gap:2px;
-    align-items: center;
-    flex-wrap: wrap;
+        width: 642vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        gap: 2vw;
     }
 
-
+    .menuItem{
+        width: 90vw;
+        height: 94vw;
+        border-radius: 2vw;
+        border: 2vw solid #AB69F2;
+    }
 
     #footer{
         font-size:1rem;

@@ -67,7 +67,24 @@ function menuLoad(){
 
 
   const menuGenel=document.createElement('div');
-  menu.appendChild(allSlides[activeSlide]);
+  // menu.appendChild(allSlides[activeSlide]);
+
+  menu.appendChild(card5.cloneNode(true));
+  menu.appendChild(allSlides[0]);
+  menu.appendChild(allSlides[1]);
+  menu.appendChild(allSlides[2]);
+  menu.appendChild(allSlides[3]);
+  menu.appendChild(allSlides[4]);
+  menu.appendChild(card1.cloneNode(true));
+
+  // menu.style.transform=`translate(142vh)`;
+
+  if (screen.width<700){
+    menu.style.transform=`translate(183vw)`;
+  }
+  else{
+    menu.style.transform=`translate(143vh)`;
+  }
  
   menuGenel.appendChild(menu);
 
@@ -134,8 +151,12 @@ function menuLoad(){
 
   function navForward(){
     activeSlide=(activeSlide+1)%5;
-    menu.removeChild(menu.firstChild);
-    menu.appendChild(allSlides[activeSlide]);
+    if (screen.width<700){
+      menu.style.transform=`translate(${180-activeSlide*92+3}vw)`;
+    }
+    else{
+      menu.style.transform=`translate(${140-activeSlide*72+3}vh)`;
+    }
     blackDot();
     clearInterval(slideInterval);
     slideInterval=setInterval(navForward, 5000);
@@ -144,8 +165,13 @@ function menuLoad(){
   function navBackward(){
     activeSlide=(activeSlide-1);
     if (activeSlide===-1){activeSlide=4;}
-    menu.removeChild(menu.firstChild);
-    menu.appendChild(allSlides[activeSlide]);
+    if (screen.width<700){
+      menu.style.transform=`translate(${180-activeSlide*92+3}vw)`;
+    }
+    else{
+      menu.style.transform=`translate(${140-activeSlide*72+3}vh)`;
+    }
+    // menu.style.transform=`translate(${140-activeSlide*70+2}vh)`;
     blackDot();
     clearInterval(slideInterval);
     slideInterval=setInterval(navForward, 5000);
@@ -161,8 +187,7 @@ function menuLoad(){
 
   function selectImage(e){
     activeSlide=e.target.cell;
-    menu.removeChild(menu.firstChild);
-    menu.appendChild(allSlides[activeSlide]);
+    menu.style.transform=`translate(${140-activeSlide*70}vh)`;
     blackDot();
     clearInterval(slideInterval);
     slideInterval=setInterval(navForward, 5000);
