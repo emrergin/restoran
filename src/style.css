@@ -139,7 +139,7 @@ li{
     border-radius: 2vmin;
     border: 2vmin solid #AB69F2;
     /* width: 100vw; */
-    height: 70vh;
+    height: 78vh;
     width: 70vh;
 }
 
@@ -221,9 +221,7 @@ li{
     flex-wrap: wrap;
     }
 
-    .menuitem{
-        width: 45%;
-    }
+
 
     #footer{
         font-size:1rem;
